@@ -4,40 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task managing Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 </head>
 <body>
+    <h1>Task Managing Site</h1>
+<div class="container">
+
    <form>
-    <label for="title">Title</label><br>
-    <input type="text" id="title">
-<br>
+    <div class="form-group">
+        <label for="title">Title</label><br>
+        <input type="text" class="form-control"/>
+    </div>
+
+<div class="form-group">
     <label for="description">Description</label>
     <br>
-    <textarea id="description">
+    <textarea rows="3" class="form-control">
 
     </textarea>
-<br>
+</div>
+
+<div class="form-group">
     <label for="category">Category</label>
     <br>
-    <input type="text" id="category">
-<br>
+    <input type="text" class="form-control">
+</div>
+
+<div class="form-group">
     <label for="priol">Priority Level</label>
     <br>
-    <select id="priol">
+    <select class="form-control">
       <option value="">Select an item</option>
       <option value="1">High</option>
       <option value="2">Low</option>
       <option value="3">Very Low</option>
     </select>
-<br>
+</div>
+
+<div class="form-group">
     <label for="progl">Progress Level</label><br>
-    <select id="progl">
+    <select class="form-control">
+
     <option value="">Select an item</option>
       <option value="1">Completed</option>
       <option value="2">Pending</option>
       <option value="3">Not started</option>
 </select>
-<br>
-<button>Submit</button>
+</div>
+
+<button class="btn btn-primary">Submit</button>
    </form> 
+</div>
 </body>
 </html>
